@@ -2,7 +2,7 @@ require 'date'
 
 time = DateTime.now
 
-puts "  #{time.year}"
+puts "\n  #{time.year}\n\n"
 out = ->(a) { (1..a).each { |d| print d, ' ' }}
 (1..12).each do |m|
   case m

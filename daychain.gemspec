@@ -13,6 +13,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{A day track system for habit building}
   gem.homepage      = "http://shaneweng.com/daychain"
   gem.license       = "MIT"
+  gem.executables   << "daychain"
 
   gem.files         = ["lib/daychain.rb"]
   gem.require_paths = ["lib"]

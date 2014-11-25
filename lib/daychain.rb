@@ -25,5 +25,3 @@ module Daychain
     end
   end
 end
-
-# Daychain.output

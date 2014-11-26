@@ -2,11 +2,18 @@ require 'date'
 require 'colorize'
 
 module Daychain
+
   def self.output
     time = DateTime.now
 
     puts "\n  #{time.year}\n".yellow
-    out = ->(a) { (1..a).each { |d| print d, ' ' }}
+
+    out = ->(a) do
+      (1..a).each do |d|
+         print d, ' ' 
+      end
+    end
+
     (1..12).each do |m|
       case m
       when 2
@@ -25,3 +32,4 @@ module Daychain
     end
   end
 end
+# Daychain.output
